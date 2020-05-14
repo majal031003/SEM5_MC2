@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RELATIVELAYOUT">
+
+    <TextView
+        android:id="@+id/txTITULO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@android:dimen/notification_large_icon_height"
+        android:text="RELATIVE LAYOUT" />
+
+    <EditText
+        android:id="@+id/etValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txTITULO"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etValor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/etValor"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/etValor2"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnSumar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etResultado"
+        android:layout_centerHorizontal="true"
+        android:onClick="Sumar"
+        android:text="SUMAR" />
+
+</RelativeLayout>
